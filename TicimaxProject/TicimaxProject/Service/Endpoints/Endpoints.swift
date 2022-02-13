@@ -9,5 +9,5 @@ import Foundation
 import Foundation
 
 struct Endpoints {
-//    static let search = "/search"
+    static let getMemes = "/get_memes"
 }

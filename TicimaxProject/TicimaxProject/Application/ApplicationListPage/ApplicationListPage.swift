@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ApplicationListPage.swift
 //  TicimaxProject
 //
 //  Created by Ali Akgün on 13.02.2022.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ApplicationListPage: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
