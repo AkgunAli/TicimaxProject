@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28B1955C7925371F9FFFCCCA /* Pods_TicimaxProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 259B6BC4265CDC034CB55EAF /* Pods_TicimaxProject.framework */; };
 		80DF5AAB27B96FAC0097C84F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5AAA27B96FAC0097C84F /* AppDelegate.swift */; };
 		80DF5AAD27B96FAC0097C84F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5AAC27B96FAC0097C84F /* SceneDelegate.swift */; };
 		80DF5AAF27B96FAC0097C84F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5AAE27B96FAC0097C84F /* ViewController.swift */; };
 		80DF5AB227B96FAC0097C84F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DF5AB027B96FAC0097C84F /* Main.storyboard */; };
 		80DF5AB427B96FAF0097C84F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DF5AB327B96FAF0097C84F /* Assets.xcassets */; };
 		80DF5AB727B96FAF0097C84F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DF5AB527B96FAF0097C84F /* LaunchScreen.storyboard */; };
+		80DF5AC827B974DD0097C84F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5AC727B974DD0097C84F /* Endpoints.swift */; };
+		80DF5ACB27B974FE0097C84F /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5ACA27B974FE0097C84F /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		259B6BC4265CDC034CB55EAF /* Pods_TicimaxProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TicimaxProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6402605D7186496C6D8EA5B8 /* Pods-TicimaxProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicimaxProject.release.xcconfig"; path = "Target Support Files/Pods-TicimaxProject/Pods-TicimaxProject.release.xcconfig"; sourceTree = "<group>"; };
 		80DF5AA727B96FAC0097C84F /* TicimaxProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicimaxProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DF5AAA27B96FAC0097C84F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80DF5AAC27B96FAC0097C84F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		80DF5AB327B96FAF0097C84F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80DF5AB627B96FAF0097C84F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80DF5AB827B96FAF0097C84F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DF5AC727B974DD0097C84F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		80DF5ACA27B974FE0097C84F /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		A3D81EA86CE3C274BA4FACCA /* Pods-TicimaxProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicimaxProject.debug.xcconfig"; path = "Target Support Files/Pods-TicimaxProject/Pods-TicimaxProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B1955C7925371F9FFFCCCA /* Pods_TicimaxProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18FE9500D70199DED93E22B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				259B6BC4265CDC034CB55EAF /* Pods_TicimaxProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80DF5A9E27B96FAC0097C84F = {
 			isa = PBXGroup;
 			children = (
 				80DF5AA927B96FAC0097C84F /* TicimaxProject */,
 				80DF5AA827B96FAC0097C84F /* Products */,
+				C2A4BCCF454933E2335084C0 /* Pods */,
+				18FE9500D70199DED93E22B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,107 @@
 		80DF5AA927B96FAC0097C84F /* TicimaxProject */ = {
 			isa = PBXGroup;
 			children = (
-				80DF5AAA27B96FAC0097C84F /* AppDelegate.swift */,
-				80DF5AAC27B96FAC0097C84F /* SceneDelegate.swift */,
-				80DF5AAE27B96FAC0097C84F /* ViewController.swift */,
-				80DF5AB027B96FAC0097C84F /* Main.storyboard */,
+				80DF5AC327B974B20097C84F /* Service */,
+				80DF5ABF27B974110097C84F /* Application */,
+				80DF5ABE27B973FC0097C84F /* AppDelegate */,
 				80DF5AB327B96FAF0097C84F /* Assets.xcassets */,
-				80DF5AB527B96FAF0097C84F /* LaunchScreen.storyboard */,
 				80DF5AB827B96FAF0097C84F /* Info.plist */,
 			);
 			path = TicimaxProject;
+			sourceTree = "<group>";
+		};
+		80DF5ABE27B973FC0097C84F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5AAC27B96FAC0097C84F /* SceneDelegate.swift */,
+				80DF5AB527B96FAF0097C84F /* LaunchScreen.storyboard */,
+				80DF5AAA27B96FAC0097C84F /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		80DF5ABF27B974110097C84F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5AC027B974230097C84F /* Storyboard */,
+				80DF5AC127B974600097C84F /* ApplicationListPage */,
+				80DF5AC227B9746D0097C84F /* ApplicationDetailPage */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		80DF5AC027B974230097C84F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5AB027B96FAC0097C84F /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		80DF5AC127B974600097C84F /* ApplicationListPage */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5AAE27B96FAC0097C84F /* ViewController.swift */,
+			);
+			path = ApplicationListPage;
+			sourceTree = "<group>";
+		};
+		80DF5AC227B9746D0097C84F /* ApplicationDetailPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ApplicationDetailPage;
+			sourceTree = "<group>";
+		};
+		80DF5AC327B974B20097C84F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5AC627B974CA0097C84F /* Endpoints */,
+				80DF5AC527B974C20097C84F /* Service */,
+				80DF5AC427B974BC0097C84F /* Models */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		80DF5AC427B974BC0097C84F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		80DF5AC527B974C20097C84F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5AC927B974F40097C84F /* API */,
+				80DF5ACA27B974FE0097C84F /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		80DF5AC627B974CA0097C84F /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5AC727B974DD0097C84F /* Endpoints.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		80DF5AC927B974F40097C84F /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		C2A4BCCF454933E2335084C0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3D81EA86CE3C274BA4FACCA /* Pods-TicimaxProject.debug.xcconfig */,
+				6402605D7186496C6D8EA5B8 /* Pods-TicimaxProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80DF5ABB27B96FAF0097C84F /* Build configuration list for PBXNativeTarget "TicimaxProject" */;
 			buildPhases = (
+				96027104832893B2E6A738B4 /* [CP] Check Pods Manifest.lock */,
 				80DF5AA327B96FAC0097C84F /* Sources */,
 				80DF5AA427B96FAC0097C84F /* Frameworks */,
 				80DF5AA527B96FAC0097C84F /* Resources */,
+				53D842104B2855EB7F4B02C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +245,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		53D842104B2855EB7F4B02C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicimaxProject/Pods-TicimaxProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TicimaxProject/Pods-TicimaxProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TicimaxProject/Pods-TicimaxProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96027104832893B2E6A738B4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicimaxProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80DF5AA327B96FAC0097C84F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -139,6 +294,8 @@
 			files = (
 				80DF5AAF27B96FAC0097C84F /* ViewController.swift in Sources */,
 				80DF5AAB27B96FAC0097C84F /* AppDelegate.swift in Sources */,
+				80DF5ACB27B974FE0097C84F /* Service.swift in Sources */,
+				80DF5AC827B974DD0097C84F /* Endpoints.swift in Sources */,
 				80DF5AAD27B96FAC0097C84F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +440,7 @@
 		};
 		80DF5ABC27B96FAF0097C84F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D81EA86CE3C274BA4FACCA /* Pods-TicimaxProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +459,7 @@
 		};
 		80DF5ABD27B96FAF0097C84F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6402605D7186496C6D8EA5B8 /* Pods-TicimaxProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
