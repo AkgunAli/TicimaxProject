@@ -14,15 +14,14 @@ class ApplicationItemCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-
-        imageMeme.backgroundColor = UIColor.blue
-
-        imageMeme.translatesAutoresizingMaskIntoConstraints = false
-        nameMeme.translatesAutoresizingMaskIntoConstraints = false
-
-        
         contentView.addSubview(imageMeme)
         contentView.addSubview(nameMeme)
+        initConstraint()
+    }
+    
+    func initConstraint(){
+        imageMeme.translatesAutoresizingMaskIntoConstraints = false
+        nameMeme.translatesAutoresizingMaskIntoConstraints = false
         let margins = contentView.layoutMarginsGuide
         imageMeme.leadingAnchor.constraint(equalTo: margins.leadingAnchor, constant: 0).isActive = true
         imageMeme.rightAnchor.constraint(equalTo: margins.rightAnchor, constant: 0).isActive = true
@@ -35,8 +34,6 @@ class ApplicationItemCell: UITableViewCell {
         nameMeme.rightAnchor.constraint(equalTo: margins.rightAnchor, constant: 0).isActive = true
         nameMeme.bottomAnchor.constraint(equalTo: margins.bottomAnchor, constant: 0).isActive = true
         nameMeme.textAlignment = .center
-        
-
     }
     
     func configure(for content: Memes){
