@@ -13,7 +13,7 @@ import UIKit
 
 // MARK: Content Types
 enum ApiContentTypeEnum: String {
-    case applicationJson = "text/javascript"
+    case applicationJson = "application/json"
 }
 
 // MARK: Timeout

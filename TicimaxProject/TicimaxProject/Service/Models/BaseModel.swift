@@ -9,10 +9,9 @@ import Foundation
 import ObjectMapper
 
 class BaseModel<S:Mappable>: Mappable{
-    var resultCount: Int?
-    var resultsObject: S?
-    var resultsArray: [S]?
-    
+    var success: Bool?
+    var data: S?
+
     init() {
         // Intentionally unimplemented
     }
@@ -22,8 +21,7 @@ class BaseModel<S:Mappable>: Mappable{
     }
 
     func mapping(map: Map) {
-        resultCount <- map["resultCount"]
-        resultsObject <- map["results"]
-        resultsArray <- map["results"]
+        success <- map["success"]
+        data <- map["data"]
     }
 }

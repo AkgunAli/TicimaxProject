@@ -9,7 +9,7 @@ import Foundation
 import ObjectMapper
 
 class MemesModel : Mappable{
-    var memes: Memes?
+    var memes: [Memes]?
     
     init() {
         // Intentionally unimplemented

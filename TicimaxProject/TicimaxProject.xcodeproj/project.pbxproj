@@ -22,6 +22,11 @@
 		80DF5AD627B97A930097C84F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5AD527B97A930097C84F /* BaseModel.swift */; };
 		80DF5AD827B97AEF0097C84F /* MemesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5AD727B97AEF0097C84F /* MemesModel.swift */; };
 		80DF5ADA27B97BBC0097C84F /* MemesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5AD927B97BBC0097C84F /* MemesAPI.swift */; };
+		80DF5ADC27B97CA10097C84F /* ApplicationListPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5ADB27B97CA10097C84F /* ApplicationListPageVM.swift */; };
+		80DF5AE027B999410097C84F /* ApplicationItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DF5ADE27B999410097C84F /* ApplicationItemCell.swift */; };
+		80DF5AE127B999410097C84F /* ApplicationItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80DF5ADF27B999410097C84F /* ApplicationItemCell.xib */; };
+		80F06C6B27BB122800861F3F /* ApplicationDetailPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F06C6A27BB122800861F3F /* ApplicationDetailPageVC.swift */; };
+		80F06C6D27BB233400861F3F /* ApplicationDetailPageVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F06C6C27BB233400861F3F /* ApplicationDetailPageVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		80DF5AD527B97A930097C84F /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		80DF5AD727B97AEF0097C84F /* MemesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesModel.swift; sourceTree = "<group>"; };
 		80DF5AD927B97BBC0097C84F /* MemesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesAPI.swift; sourceTree = "<group>"; };
+		80DF5ADB27B97CA10097C84F /* ApplicationListPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationListPageVM.swift; sourceTree = "<group>"; };
+		80DF5ADE27B999410097C84F /* ApplicationItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationItemCell.swift; sourceTree = "<group>"; };
+		80DF5ADF27B999410097C84F /* ApplicationItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ApplicationItemCell.xib; sourceTree = "<group>"; };
+		80F06C6A27BB122800861F3F /* ApplicationDetailPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailPageVC.swift; sourceTree = "<group>"; };
+		80F06C6C27BB233400861F3F /* ApplicationDetailPageVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationDetailPageVM.swift; sourceTree = "<group>"; };
 		A3D81EA86CE3C274BA4FACCA /* Pods-TicimaxProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicimaxProject.debug.xcconfig"; path = "Target Support Files/Pods-TicimaxProject/Pods-TicimaxProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +138,9 @@
 		80DF5AC127B974600097C84F /* ApplicationListPage */ = {
 			isa = PBXGroup;
 			children = (
+				80DF5ADD27B998CC0097C84F /* Cell */,
 				80DF5AAE27B96FAC0097C84F /* ApplicationListPage.swift */,
+				80DF5ADB27B97CA10097C84F /* ApplicationListPageVM.swift */,
 			);
 			path = ApplicationListPage;
 			sourceTree = "<group>";
@@ -136,6 +148,8 @@
 		80DF5AC227B9746D0097C84F /* ApplicationDetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				80F06C6A27BB122800861F3F /* ApplicationDetailPageVC.swift */,
+				80F06C6C27BB233400861F3F /* ApplicationDetailPageVM.swift */,
 			);
 			path = ApplicationDetailPage;
 			sourceTree = "<group>";
@@ -210,6 +224,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		80DF5ADD27B998CC0097C84F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				80DF5ADE27B999410097C84F /* ApplicationItemCell.swift */,
+				80DF5ADF27B999410097C84F /* ApplicationItemCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		C2A4BCCF454933E2335084C0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +304,7 @@
 				80DF5AB727B96FAF0097C84F /* LaunchScreen.storyboard in Resources */,
 				80DF5AB427B96FAF0097C84F /* Assets.xcassets in Resources */,
 				80DF5AB227B96FAC0097C84F /* Main.storyboard in Resources */,
+				80DF5AE127B999410097C84F /* ApplicationItemCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,10 +359,14 @@
 			files = (
 				80DF5AD627B97A930097C84F /* BaseModel.swift in Sources */,
 				80DF5AAF27B96FAC0097C84F /* ApplicationListPage.swift in Sources */,
+				80DF5ADC27B97CA10097C84F /* ApplicationListPageVM.swift in Sources */,
 				80DF5AD227B976C80097C84F /* DictionaryExtensions.swift in Sources */,
+				80F06C6D27BB233400861F3F /* ApplicationDetailPageVM.swift in Sources */,
 				80DF5AAB27B96FAC0097C84F /* AppDelegate.swift in Sources */,
 				80DF5ACB27B974FE0097C84F /* Service.swift in Sources */,
 				80DF5AD427B976E10097C84F /* DoubleExtensions.swift in Sources */,
+				80F06C6B27BB122800861F3F /* ApplicationDetailPageVC.swift in Sources */,
+				80DF5AE027B999410097C84F /* ApplicationItemCell.swift in Sources */,
 				80DF5AC827B974DD0097C84F /* Endpoints.swift in Sources */,
 				80DF5AD827B97AEF0097C84F /* MemesModel.swift in Sources */,
 				80DF5AAD27B96FAC0097C84F /* SceneDelegate.swift in Sources */,
